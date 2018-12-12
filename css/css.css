@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+html body {
+    height: 100%;
+    background-color: #fefefe;
+    font-family: Helvetica, sans-serif;
+}
+
+.page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    perspective: 1200px;
+    background: url('../img/bg@2x.png') no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    min-width: 1300px;
+}
+
+.page .tit {
+    height: 90px;
+}
+
+.page .tit img {
+    width: 154px;
+    margin: 24px;
+}
+
+.page .tit .tit_head {
+    float: right;
+    font-size: 18px;
+    color: rgba(21, 75, 160, 1);
+    margin: 30px;
+    font-weight: bold;
+}
+
+.main {
+    margin: 0 25px;
+    color: #fff;
+}
+
+.main .title {
+    text-align: center;
+    background: linear-gradient(to left, rgba(98, 176, 228, 1), rgba(19, 73, 158, 1));
+    margin: 0 10px;
+    border-radius: 4px 4px 0 0;
+    height: 30px;
+    line-height: 30px;
+}
+
+.main .title_right {
+    /* float: right; */
+
+    margin-right: 10px;
+    height: 60px;
+    background: linear-gradient(to left, rgba(98, 176, 228, 1), rgba(19, 73, 158, 1));
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+    /* padding: 10px */
+}
+
+.main .title_right ul li {
+    height:60px;
+    /* padding: 5px */
+    line-height: 60px;
+    text-align: center
+}
+
+.main .menu_first {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+}
+
+.main .menu_first ul {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 320px;
+}
+
+.main .menu_first ul li {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    /* left: 0; */
+    display: none;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.main .menu_sec {
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+    min-width: 1350px;
+}
+
+.main .menu_first .item {
+    display: inline-block;
+    background-color: #fff;
+    height: 320px;
+    width: 360px;
+    margin: 0 10px 5px 10px;
+    border-radius: 0 0 4px 4px;
+    color: rgba(18, 72, 158, 1);
+}
+
+.main .menu_first .item h5 {
+    text-align: center;
+    margin: 20px;
+    font-size: 26px;
+}
+
+.main .menu_first .item .ul .li {
+    list-style: none;
+    text-align: center;
+    margin: 20px;
+}
+
+.main .menu_first .item .ul .li .left {
+    /* margin-right: 50px; */
+    text-align: left;
+    font-size: 22px;
+    width: 60%;
+    display: inline-block
+    /* margin-left: 125px */
+}
+
+.main .menu_first .item .ul .li .right {
+    width: 20%;
+    text-align: right;
+    font-size: 30px;
+    color: rgba(255, 148, 10, 1);
+    font-weight: bold;
+    display: inline-block
+
+}
+
+.main .menu_sec .item {
+    background-color: #fff;
+    height: 350px;
+    /* margin: 0px 15px 10px 14px; */
+    margin: 10px;
+    width: 300px;
+    float: left;
+    border-radius: 4px;
+    color: rgba(18, 72, 158, 1);
+    font-size: 24px;
+}
+
+.main .menu_sec .item h5 {
+    text-align: center;
+    margin:60px 20px 20px 20px;
+}
+
+.main .menu_sec .item .old {
+    text-align: center;
+    color: rgba(19, 34, 58, 1);
+    font-size: 12px;
+    margin: 16px;
+    height: 36px;
+    overflow: hidden;
+    font-size: 22px;
+}
+
+.main .menu_sec .item .ann,
+.main .menu_sec .item .sail {
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    height: 36px;
+    overflow: hidden;
+}
+
+.main .menu_sec .item .ann li,
+.main .menu_sec .item .old li {
+    height: 36px;
+    /* margin-left: 25px; */
+}
+
+.main .menu_sec .item .ann ul li a {
+    color: rgba(255, 148, 10, 1);
+}
+
+.main .menu_sec .item .old ul li a {
+    color: rgba(19, 34, 58, 1)
+}
+
+.main .menu_sec .item .sail {
+    text-align: center;
+    margin: 16px;
+    font-size: 12px;
+    color: rgba(19, 34, 58, 1);
+    overflow: hidden;
+    height: 36px;
+}
+
+.main .menu_sec .item .sail li {
+    height: 36px;
+    /* margin-left: 25px; */
+}
+
+.main .menu_sec .item .sail ul li a {
+    color: rgba(19, 34, 58, 1);
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.foot {
+    height: 80px;
+    margin: 18px 35px;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    bottom: 16px;
+    background: url('../img/Combined\ Shape@3x.png') no-repeat;
+    background-size: 100% 100%
+ }
+
+.foot h3 {
+    padding-left: 20px;
+    position: absolute;
+    top: 1px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 26px;
+}
+
+.foot img {
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+#affiche {
+    position: absolute;
+    /* top: 10px; */
+    left: 300px;
+    width: 70%;
+    font-size: 22px;
+    height: 80px;
+    line-height: 80px;
+}
+.divs{
+    overflow: hidden;
+    display: inline-block;
+    
+    /* width: 100%; */
+}
